@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test:*)",
+      "Bash(curl -s http://localhost:3000/v1/health)",
+      "Bash(npm run:*)",
+      "Bash(curl -s -X POST http://localhost:3000/v1/name-spark/search -H 'Content-Type: application/json' -d '{\"gender\":\"girl\",\"origins\":[\"arabic\"],\"startingLetter\":\"L\"}')",
+      "Bash(curl -s http://localhost:3000/v1/names/layla)",
+      "Bash(curl -s -X PATCH http://localhost:3000/v1/names/ayla/favorite -H 'Content-Type: application/json' -d '{\"isFavorite\":true}')"
+    ]
+  }
+}
